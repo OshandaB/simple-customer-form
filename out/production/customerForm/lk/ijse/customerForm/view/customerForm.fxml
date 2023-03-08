@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="420.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.customerForm.controller.CustomerFormController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="410.0">
+         <children>
+            <TextField fx:id="id" layoutX="42.0" layoutY="136.0" onAction="#btnOnSave" promptText="id" />
+            <TextField fx:id="name" layoutX="226.0" layoutY="136.0" promptText="name" />
+            <TextField fx:id="address" layoutX="39.0" layoutY="200.0" promptText="address" />
+            <TextField fx:id="salary" layoutX="226.0" layoutY="200.0" promptText="salary" />
+            <Button fx:id="btnSave" layoutX="72.0" layoutY="291.0" mnemonicParsing="false" onAction="#btnSave" text="Save" />
+            <Button fx:id="btnUpdate" layoutX="172.0" layoutY="291.0" mnemonicParsing="false" onAction="#btnUpdate" text="Update" />
+            <Button fx:id="btnDelete" layoutX="281.0" layoutY="291.0" mnemonicParsing="false" onAction="#btnOndelete" text="Delete" />
+            <Label fx:id="lbl" alignment="CENTER" layoutX="107.0" layoutY="41.0" prefHeight="50.0" prefWidth="199.0" text="Customer Form">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
